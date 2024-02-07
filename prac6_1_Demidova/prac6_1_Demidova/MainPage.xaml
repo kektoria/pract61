@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prac6_1_Demidova.MainPage"
+             StyleId="contentpagetwo">
+
+    <CarouselPage.Resources>
+        <StyleSheet Source="styles.css"/>
+    </CarouselPage.Resources>
+    
+    <ContentPage StyleId="contentpagetwo">
+        <StackLayout Orientation="Vertical" Margin="0,10,0,0">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Button StyleId="buttontwo" Margin="10,0,0,0" Text="BUTTON"/>
+                    <Button StyleId="buttonthree" Margin="10,0,0,0" Text="BUTTON"/>
+                    <Button StyleId="buttonfour" Margin="10,0,0,0" Text="BUTTON"/>
+                    <Button StyleId="buttonfive" Margin="10,0,0,0" Text="BUTTON"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+                <StackLayout Orientation="Vertical">
+                    <Button StyleId="buttonsix" Margin="10,0,0,0" Text="LARGE"/>
+                    <Button StyleId="buttonseven" Margin="10,0,0,0" Text="NORMAL"/>
+                    <Button StyleId="buttoneigth" Margin="10,0,0,0" Padding="0,0,0,3" Text="small" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Button StyleId="buttonnine" Margin="10,0,0,0" Text="LARGE"/>
+                    <Button StyleId="buttonten" Margin="10,0,0,0" Text="NORMAL"/>
+                    <Button StyleId="buttoneleven" Margin="10,0,0,0" Padding="0,0,0,3" Text="small" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" Margin="0,0,0,0">
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,0">
+                            <Switch IsToggled="True" OnColor="Green" ThumbColor="White" Margin="0,0,0,0"/>
+                            <Switch IsToggled="False" OnColor="Green" ThumbColor="White" Margin="0,0,0,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Switch x:Name="switch1" IsToggled="True" Toggled="switch1_Toggled" OnColor="Green" ThumbColor="White" Margin="0,0,0,0"/>
+                            <Label x:Name="OnOff1" StyleId="labeltwo" Text="ON" Margin="0,8,-7,0"/>
+                            <Switch x:Name="switch2" IsToggled="False" Toggled="switch2_Toggled" OnColor="Green" ThumbColor="White"  Margin="0,0,0,0"/>
+                            <Label x:Name="OnOff2" StyleId="labeltwo" Text="OFF" Margin="0,8,5,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Switch x:Name="switch3" IsToggled="True" Toggled="switch3_Toggled" OnColor="Green" ThumbColor="White"  Margin="0,0,0,0"/>
+                            <Label x:Name="OnOff3" StyleId="labeltwo" Text="✓" Margin="0,8,5,0"/>
+                            <Switch x:Name="switch4" IsToggled="False" Toggled="switch4_Toggled" OnColor="Green" ThumbColor="White" Margin="0,0,0,0"/>
+                            <Label x:Name="OnOff4" StyleId="labeltwo" Text="✕" Margin="0,8,5,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <RadioButton IsChecked="True"  Margin="0,0,0,0"/>
+                            <RadioButton IsChecked="False" Margin="0,0,0,0"/>
+                            <CheckBox IsChecked="True"  Margin="0,0,0,0"/>
+                            <CheckBox IsChecked="False"  Margin="0,0,0,0"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="10, 10, 0, 0">
+                <StackLayout Orientation="Horizontal">
+                    <Picker x:Name="MyPicker" Title="DROPDOWN" StyleId="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>OPTION 1</x:String>
+                            <x:String>OPTION 2</x:String>
+                            <x:String>OPTION 3</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="header" StyleId="header" Text="Welcome" FontSize="25"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="Login" Placeholder="Username" IsEnabled="False" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="Password"  IsEnabled="False" IsPassword="True" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="MyButton" StyleId="button" Text="Перейти на 3 экран" WidthRequest="400" Clicked="MyButton_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <CheckBox x:Name="CheckBox" Margin="0,0,0,0" HorizontalOptions="Center" Color="White"/>
+                <Label Text="Remember Me" Margin="0,5,0,0" HorizontalOptions="Center" StyleId="label"/>
+                <Label Text="I forgot!" Margin="150,5,0,0" StyleId="label"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage>
+
+</CarouselPage>

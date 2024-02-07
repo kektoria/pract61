@@ -1,0 +1,138 @@
+﻿^contentpage {
+    background-color: black;
+}
+#contentpagetwo {
+    background-color: white;
+}
+#header {
+    margin: 90;
+    font-size: 45;
+    font-weight: 900;
+    color: white;
+}
+
+#entry {
+    background-color: slategray;
+    border-radius: initial 10;
+    color: black;
+}
+
+
+#button {
+    margin-top: 30;
+    background-color: red;
+    color: white;
+}
+#buttontwo {
+    border-radius: 100;
+    background: #ff0000;
+    color: white;
+    width: 185;
+    height: 40;
+}
+#buttonthree {
+    border-radius: 100;
+    background: #808080;
+    color: black;
+    width: 185;
+    height: 40;
+}
+#buttonfour {
+    border-radius: 100;
+    background: white;
+    color: black;
+    border-width: 2;
+    border-color: orange;
+    width: 185;
+    height: 40;
+}
+#buttonfive {
+    border-radius: 100;
+    background: white;
+    border-width: 2;
+    border-color: orange;
+    color: red;
+    width: 185;
+    height: 40;
+}
+#buttonsix {
+    border-radius: 80;
+    background: #0c8107;
+    color: white;
+    width: 120;
+    height: 50;
+    font-size: 11;
+}
+#buttonseven {
+    border-radius: 80;
+    background: #0c8107;
+    color: white;
+    width: 120;
+    height: 34;
+    font-size: 11;
+}
+#buttoneigth {
+    border-radius: 80;
+    background: #0c8107;
+    color: white;
+    width: 120;
+    height: 27;
+    text-align: center;
+    font-size: 11;
+}
+#buttonnine {
+    border-radius: 80;
+    background: #a4a2a3;
+    color: white;
+    width: 120;
+    height: 50;
+    font-size: 11;
+}
+#buttonten {
+    border-radius: 80;
+    background: #a4a2a3;
+    color: white;
+    width: 120;
+    height: 34;
+    font-size: 11;
+}
+#buttoneleven {
+    border-radius: 80;
+    background: #a4a2a3;
+    color: white;
+    width: 120;
+    height: 27;
+    text-align: center;
+    font-size: 11;
+}
+#else {
+    color: black;
+}
+
+#label {
+    color: white;
+    font-size: 18;
+}
+#labeltwo {
+    color: black;
+    font-size: 10;
+}
+#labelthree {
+    color: white;
+    font-size: 45;
+}
+RadioButton {
+    color: green;
+}
+
+CheckBox {
+    color: green;
+}
+
+#picker{
+    background: #eb790b;
+    text-align:center;
+    border-radius: 20;
+    height:50;
+    width:180;
+}
